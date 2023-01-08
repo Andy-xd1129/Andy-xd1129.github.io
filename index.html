@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="contact, Andy">
+    <meta name="keywords" content="Andy">
     <meta name="description" content="Welcome to my blog!">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,12 +17,53 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>contact | Andy</title>
+    <title>Andy</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
     
 
 
-    <!-- bg-cover style     -->
+    <!-- index cover -->
+    <!-- <link rel="stylesheet preload" type="text/css" href="/css/indexcover.css"> -->
+    <style>
+        .carousel-control {
+            width: 45px;
+            height: 45px;
+            line-height: 55px;
+            border-radius: 45px;
+            background: transparent;
+            cursor: pointer;
+            z-index: 100;
+        }
+        
+        #prev-cover {
+            position: absolute;
+            top: 48%;
+            left: 8px;
+        }
+        
+        #next-cover {
+            position: absolute;
+            top: 48%;
+            right: 8px;;
+        }
+        
+        #prev-cover i {
+            margin-right: 3px;
+        }
+        
+        #next-cover i {
+            margin-left: 3px;
+        }
+        
+        .carousel-control:hover {
+            background-color: rgba(0, 0, 0, .4);
+        }
+        
+        .carousel-control i {
+            color: #fff;
+            font-size: 2.4rem;
+        }
+    </style>
 
 
 
@@ -43,10 +84,6 @@
 
 
 
-
-    
-        <link rel="stylesheet" type="text/css" href="/css/reward.css">
-    
 
 
 
@@ -330,15 +367,22 @@
 
 </header>
 
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-<link rel="stylesheet" type="text/css" href="/css/barrager.css">
-<script src="/libs/valine/av-min.js"></script>
-<script src="/libs/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="/js/jquery.barrager.js"></script>
+    
 
-<div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
+
+<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
+    
+        <div id="prev-cover" class="left waves-effect carousel-control">
+            <i class="icon fa fa-angle-left"></i>
+        </div>
+        <div id="next-cover" class="right waves-effect carousel-control">
+            <i class="icon fa fa-angle-right"></i>
+        </div>
+    
+
+    <div class="carousel-item  white-text bg-cover about-cover">
+        <div class="container">
+            <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
@@ -381,56 +425,384 @@
 </script>
 
 
+
+            <div class="cover-btns">
+                <a href="#indexCard" class="waves-effect waves-light btn">
+                    <i class="fa fa-angle-double-down"></i>开始阅读
+                </a>
+
+                
+                    <a href="https://github.com/Andy-xd1129/Andy-xd1129.github.io" class="waves-effect waves-light btn" target="_blank">
+                        <i class="fab fa-github-alt"></i>Github
+                    </a>
+                
+            </div>
+            <div class="cover-social-link">
+    <a href="https://github.com/Andy-xd1129" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:3328530691@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3328530691" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3328530691" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+        </div>
+    </div>
+
+    
+        
+
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://userblink.csdnimg.cn/20221229/m0_72993968/pic/04dbcd1abb7bf452a38a7206b92e368c-2.jpg?x-oss-process=image/interlace,1/format,jpg/watermark,image_bG9nby9sb2dvM3gucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLGhfMjI=,text_QOi-vuWTkuWTkuWTkui-vg==,color_FFFFFF,size_23,type_ZmFuZ3poZW5naGVpdGk,shadow_20,t_50,g_se,x_16,y_16,order_0,align_2,interval_4');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">动态数码管</div>
+                            <div class="description center-align">
+                                
+                                    动态数码管动态显示数字
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/2022/12/28/%E5%8A%A8%E6%80%81%E6%95%B0%E7%A0%81%E7%AE%A1%E5%AE%9E%E9%AA%8C/" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('https://userblink.csdnimg.cn/20230108/m0_72993968/pic/70ac81e9902d1e072d023851ee50cf6c-0.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">通讯录管理系统</div>
+                            <div class="description center-align">
+                                
+                                    C++实现通讯录管理系统
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/2023/01/28/%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+</div>
+
+<script>
+    $(function () {
+        let coverSlider = $('.carousel');
+
+        //用户触摸轮播自动 restartPlay 是否生效
+        let initUserPressedOrDraggedActive = false
+
+        //用户触摸轮播自动 restartPlay
+        function initUserPressedOrDragged(instance) {
+            setInterval(() => {
+                if (instance.pressed || instance.dragged) {
+                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
+                    restartPlay()
+                }
+            }, 1000)
+        }
+
+        coverSlider.carousel({
+            duration: Number('120'),
+            fullWidth: true,
+            indicators: 'true' === 'true',
+            onCycleTo() {
+                if (!initUserPressedOrDraggedActive) {
+                    // console.log('initUserPressedOrDraggedActive')
+                    initUserPressedOrDragged(this)
+                    initUserPressedOrDraggedActive = true
+                }
+            },
+        })
+
+        let carouselIntervalId;
+        
+        // Loop to call the next cover article picture.
+        let autoCarousel = function () {
+            carouselIntervalId = setInterval(function () {
+                coverSlider.carousel('next');
+            }, 5000);
+        };
+        autoCarousel();
+        
+
+        function restartPlay() {
+            
+            clearInterval(carouselIntervalId);
+            autoCarousel();
+            
+        };
+
+        
+        // prev and next cover post.
+        $('#prev-cover').click(function () {
+            coverSlider.carousel('prev');
+            restartPlay();
+        });
+        $('#next-cover').click(function () {
+            coverSlider.carousel('next');
+            restartPlay();
+        });
+        
+    });
+</script>
+
+
+
+<main class="content">
+
+    
+    <div id="indexCard" class="index-card">
+        <div class="container ">
+            <div class="card">
+                <div class="card-content">
+                    
+                        <div class="dream">
+    
+    <div class="title center-align">
+        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;Motto
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
+            一个勇者有过的失败不失意的人生：即使不能拥有完美的生活，所幸追求过完整的自我。
+        </div>
     </div>
 </div>
 
+                    
+
+                    
+                        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
 <style>
-    #send{
-        margin-bottom: 10px;
-        width: 49%;
-        background-color: #0ba360;
+    .aplayer .aplayer-lrc p {
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
     }
-    #clear{
-        margin-bottom: 10px;
-        width: 49%;
-        background-color: #e7c65c;
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        font-size: 15px;
+        color: #42b983;
     }
-    p{
-        text-align: center;
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
     }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
 </style>
-<main class="content">
-    <div id="contact" class="container chip-container">
-        <div class="card">
-            <div class="card-content">
-                <div class="tag-title center-align">
-                    <i class="fas fa-comments"></i>&nbsp;&nbsp;留言板
-                </div>
-                
-            </div>
-            <!--valine评论弹幕-->
-            
+<div class="music-player">
+    
+        <div class="title center-align">
+            <i class="fas fa-music"></i>&nbsp;&nbsp;Favorite Songs
         </div>
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="8020084844"
+                   fixed='false'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
 
-        <!--其他评论card-->
-        <div class="card">
-            
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
 
-            
+                        
 
-            
+                    
+                        <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
+<div class="video-player">
+    
+    <div class="title center-align">
+        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;Favorite Video
+    </div>
+    
+    <div class="row">
+		
+			<iframe src='https://player.bilibili.com/player.html?aid=5102546&bvid=BV1ns411v7Jt&cid=8289187&page=1' scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" align="middle"  style="height: 150px;" width="100%"> </iframe>
+		
+    </div>
+</div>
 
-            
+<script src="/libs/dplayer/DPlayer.min.js"></script>
+<script>
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: 'false' === 'true',
+            theme: '#42b983',
+            loop: 'false' === 'true',
+            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: 'auto',
+            volume: Number('0.7'),
+            video: {
+                url: '',
+                pic: '',
+                thumbnails: ''
+            }
+        });
+    });
+</script>
 
-            
+                    
 
-            
+                    
+                    <div id="recommend-sections" class="recommend">
+                        
 
-            
 
+
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </div>
+    
+
+    
+
+    <!-- 所有文章卡片 -->
+    <article id="articles" class="container articles">
+        <div class="row article-row">
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2023/01/28/%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">
+                        <div class="card-image">
+                            
+                            <img src="https://userblink.csdnimg.cn/20230108/m0_72993968/pic/70ac81e9902d1e072d023851ee50cf6c-0.jpg" class="responsive-img" alt="通讯录管理系统">
+                            
+                            <span class="card-title">通讯录管理系统</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                C++实现通讯录管理系统
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-28
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                Andy
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2022/12/28/%E5%8A%A8%E6%80%81%E6%95%B0%E7%A0%81%E7%AE%A1%E5%AE%9E%E9%AA%8C/">
+                        <div class="card-image">
+                            
+                            <img src="https://userblink.csdnimg.cn/20221229/m0_72993968/pic/04dbcd1abb7bf452a38a7206b92e368c-2.jpg?x-oss-process=image/interlace,1/format,jpg/watermark,image_bG9nby9sb2dvM3gucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLGhfMjI=,text_QOi-vuWTkuWTkuWTkui-vg==,color_FFFFFF,size_23,type_ZmFuZ3poZW5naGVpdGk,shadow_20,t_50,g_se,x_16,y_16,order_0,align_2,interval_4" class="responsive-img" alt="动态数码管">
+                            
+                            <span class="card-title">动态数码管</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                动态数码管动态显示数字
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-28
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                Andy
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+        </div>
+    </article>
+
 </main>
+
+
 
 
     <footer class="page-footer bg-color">
