@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="算法入门刷题（1）, Andy">
+    <meta name="keywords" content="算法入门刷题（2）, Andy">
     <meta name="description" content="C++实现通讯录管理系统">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>算法入门刷题（1） | Andy</title>
+    <title>算法入门刷题（2） | Andy</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
     
 
@@ -339,7 +339,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">算法入门刷题（1）</h1>
+                    <h1 class="description center-align post-title">算法入门刷题（2）</h1>
                 </div>
             </div>
         </div>
@@ -375,14 +375,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-09-28
+                    2024-06-28
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-04-26
+                    2024-07-09
                 </div>
                 
 
@@ -416,7 +416,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="算法入门刷题（1）"><a href="#算法入门刷题（1）" class="headerlink" title="算法入门刷题（1）"></a>算法入门刷题（1）</h3><h5 id="习题2-6-排列（permutation"><a href="#习题2-6-排列（permutation" class="headerlink" title="习题2-6 排列（permutation)"></a>习题2-6 排列（permutation)</h5><h6 id="题目：用1-2-3……-9组成3个三位数abc-def和ghi-每个数字恰好使用一次-要求abc-def-ghi-x3D-1-2-3-输出所有解。"><a href="#题目：用1-2-3……-9组成3个三位数abc-def和ghi-每个数字恰好使用一次-要求abc-def-ghi-x3D-1-2-3-输出所有解。" class="headerlink" title="题目：用1,2,3……,9组成3个三位数abc,def和ghi,每个数字恰好使用一次,要求abc:def:ghi&#x3D;1:2:3.输出所有解。"></a>题目：用1,2,3……,9组成3个三位数abc,def和ghi,每个数字恰好使用一次,要求abc:def:ghi&#x3D;1:2:3.输出所有解。</h6><p>我的代码：</p>
+                <h3 id="算法入门刷题（2）"><a href="#算法入门刷题（2）" class="headerlink" title="算法入门刷题（2）"></a>算法入门刷题（2）</h3><h5 id="习题2-6-排列（permutation"><a href="#习题2-6-排列（permutation" class="headerlink" title="习题2-6 排列（permutation)"></a>习题2-6 排列（permutation)</h5><h6 id="题目：用1-2-3……-9组成3个三位数abc-def和ghi-每个数字恰好使用一次-要求abc-def-ghi-x3D-1-2-3-输出所有解。"><a href="#题目：用1-2-3……-9组成3个三位数abc-def和ghi-每个数字恰好使用一次-要求abc-def-ghi-x3D-1-2-3-输出所有解。" class="headerlink" title="题目：用1,2,3……,9组成3个三位数abc,def和ghi,每个数字恰好使用一次,要求abc:def:ghi&#x3D;1:2:3.输出所有解。"></a>题目：用1,2,3……,9组成3个三位数abc,def和ghi,每个数字恰好使用一次,要求abc:def:ghi&#x3D;1:2:3.输出所有解。</h6><p>我的代码：</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> abc = <span class="number">0</span>, def = <span class="number">0</span>, ghi = <span class="number">0</span>;</span><br><span class="line">	<span class="type">int</span> a=<span class="number">0</span>, b=<span class="number">0</span>, c=<span class="number">0</span>, d=<span class="number">0</span>, e=<span class="number">0</span>, f=<span class="number">0</span>, g=<span class="number">0</span>, h=<span class="number">0</span>, i=<span class="number">0</span>;</span><br><span class="line">	<span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">	<span class="type">int</span> flag = <span class="number">0</span>;<span class="comment">//初始化数据以及定义全局变量</span></span><br><span class="line">	<span class="keyword">for</span> ( abc = <span class="number">123</span>; abc &lt; <span class="number">329</span>; abc++)</span><br><span class="line">	&#123;</span><br><span class="line">		def = <span class="number">2</span> * abc;</span><br><span class="line">		ghi = <span class="number">3</span> * abc;</span><br><span class="line">		a = abc / <span class="number">100</span>;</span><br><span class="line">		b = (abc % <span class="number">100</span>) / <span class="number">10</span>;</span><br><span class="line">		c = abc % <span class="number">10</span>;</span><br><span class="line">		d = def / <span class="number">100</span>;</span><br><span class="line">		e = (def % <span class="number">100</span>) / <span class="number">10</span>;</span><br><span class="line">		f = def % <span class="number">10</span>;</span><br><span class="line">		g = ghi / <span class="number">100</span>;</span><br><span class="line">		h = (ghi % <span class="number">100</span>) / <span class="number">10</span>;</span><br><span class="line">		i = ghi % <span class="number">10</span>;<span class="comment">//分离这九位数字</span></span><br><span class="line">		<span class="type">int</span> s[<span class="number">9</span>] = &#123; a,b,c,d,e,f,g,h,i &#125;;<span class="comment">//将这九位数字存入数组，以通过遍历数组来判断这九个数字的特征</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; <span class="number">9</span>; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (s[j] != <span class="number">0</span>)</span><br><span class="line">				sum++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (sum == <span class="number">9</span>)<span class="comment">//判断这九位数是不是0，如果都不是0则执行</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="type">int</span> k = <span class="number">0</span>; k &lt; <span class="number">8</span>; k++)</span><br><span class="line">				<span class="keyword">for</span> (<span class="type">int</span> m = k + <span class="number">1</span>; m &lt; <span class="number">9</span>; m++)</span><br><span class="line">				&#123;</span><br><span class="line">					<span class="keyword">if</span> (s[k] == s[m])</span><br><span class="line">						flag++;</span><br><span class="line">				&#125;</span><br><span class="line">			<span class="keyword">if</span> (flag == <span class="number">0</span>)<span class="comment">//判断九个数中是否有数字相等，如果都不相等则执行</span></span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;%d %d %d\n&quot;</span>, abc, def, ghi);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		sum = <span class="number">0</span>;</span><br><span class="line">		flag = <span class="number">0</span>;<span class="comment">//sum标志和flag标志置零，以便下次循环判断</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>学习代码：</p>
@@ -450,7 +450,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://Andy-xd1129.github.io/2022/09/28/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E5%88%B7%E9%A2%98%EF%BC%881%EF%BC%89/">http://Andy-xd1129.github.io/2022/09/28/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E5%88%B7%E9%A2%98%EF%BC%881%EF%BC%89/</a>
+                    <a href="http://Andy-xd1129.github.io/2024/06/28/2024-06-28-%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E5%88%B7%E9%A2%98%EF%BC%882%EF%BC%89/">http://Andy-xd1129.github.io/2024/06/28/2024-06-28-%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E5%88%B7%E9%A2%98%EF%BC%882%EF%BC%89/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -564,52 +564,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
-            <div class="card">
-                <a href="/2023/01/28/%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">
-                    <div class="card-image">
-                        
-                        <img src="https://userblink.csdnimg.cn/20230108/m0_72993968/pic/70ac81e9902d1e072d023851ee50cf6c-0.jpg" class="responsive-img" alt="通讯录管理系统">
-                        
-                        <span class="card-title">通讯录管理系统</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            C++实现通讯录管理系统
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-01-28
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Andy
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2022/09/28/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E5%88%B7%E9%A2%98%EF%BC%881%EF%BC%89/">
+                <a href="/2024/06/28/2024-06-28-%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E5%88%B7%E9%A2%98%EF%BC%882%EF%BC%89/">
                     <div class="card-image">
                         
-                        <img src="https://userblink.csdnimg.cn/20230426/m0_72993968/pic/a89479cb9f59d85c90e3c7a803c57d29-0.png" class="responsive-img" alt="算法入门刷题（1）">
+                        <img src="https://userblink.csdnimg.cn/20230426/m0_72993968/pic/a89479cb9f59d85c90e3c7a803c57d29-0.png" class="responsive-img" alt="算法入门刷题（2）">
                         
-                        <span class="card-title">算法入门刷题（1）</span>
+                        <span class="card-title">算法入门刷题（2）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -620,7 +585,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-28
                             </span>
                         <span class="publish-author">
                             
@@ -631,6 +596,42 @@
                     </div>
                 </div>
 
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/11/18/%E5%8A%A8%E6%80%81%E6%95%B0%E7%A0%81%E7%AE%A1%E5%AE%9E%E9%AA%8C/">
+                    <div class="card-image">
+                        
+                        <img src="https://userblink.csdnimg.cn/20221229/m0_72993968/pic/04dbcd1abb7bf452a38a7206b92e368c-2.jpg?x-oss-process=image/interlace,1/format,jpg/watermark,image_bG9nby9sb2dvM3gucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLGhfMjI=,text_QOi-vuWTkuWTkuWTkui-vg==,color_FFFFFF,size_23,type_ZmFuZ3poZW5naGVpdGk,shadow_20,t_50,g_se,x_16,y_16,order_0,align_2,interval_4" class="responsive-img" alt="动态数码管">
+                        
+                        <span class="card-title">动态数码管</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            动态数码管动态显示数字
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-11-18
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Andy
+                            
+                        </span>
+                    </div>
+                </div>
                 
             </div>
         </div>
